@@ -1,34 +1,43 @@
-<Header class="bg-white">
+<Header class="py-6 fixed top-0 w-full">
     <div class="container mx-auto px-3">
         <nav class="relative">
             <div class="relative flex items-center justify-between">
-                <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                    <div class="flex shrink-0 items-center">
-                      <img src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company" class="h-8 w-auto" />
-                    </div>
-                    <div class="hidden sm:ml-6 sm:block">
-                        <div class="flex space-x-4">
-                            <a href="#"   routerLink="/home" aria-current="page" class="rounded-md px-3 py-2 text-md tracking-wide font-medium font-inter text-primary">Home</a>
-                            
-                            <a  routerLink="/courses" href="#" class="rounded-md px-3 py-2 text-md tracking-wide font-medium text-gray-800 hover:text-primary duration-200">Courses</a>
+                <div class="flex items-center justify-between w-full">
+                    <div class="flex items-center">
+                        <div class="flex shrink-0 items-center">
+                        <img src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company" class="h-8 w-auto" />
+                        </div>
+                        <div class="hidden sm:ml-6 sm:block">
+                            <div class="flex space-x-4">
+                                <a href="#"   routerLink="/home" aria-current="page" class="rounded-md px-3 py-2 text-md tracking-wide font-medium font-inter text-primary">Home</a>
+                                
+                                <a  routerLink="/courses" href="#" class="rounded-md px-3 py-2 text-md tracking-wide font-medium text-gray-800 hover:text-primary duration-200">Courses</a>
 
-                            <a href="#"  routerLink="/placements" class="rounded-md px-3 py-2 text-md tracking-wide font-medium text-gray-800 hover:text-primary duration-200">Placement</a>
+                                <a href="#"  routerLink="/placements" class="rounded-md px-3 py-2 text-md tracking-wide font-medium text-gray-800 hover:text-primary duration-200">Placement</a>
 
-                            <a href="#"  routerLink="/about" class="rounded-md px-3 py-2 text-md tracking-wide font-medium text-gray-800 hover:text-primary duration-200">About</a>
+                                <a href="#"  routerLink="/about" class="rounded-md px-3 py-2 text-md tracking-wide font-medium text-gray-800 hover:text-primary duration-200">About</a>
 
-                            <a href="#"  routerLink="/blogs" class="rounded-md px-3 py-2 text-md tracking-wide font-medium text-gray-800 hover:text-primary duration-200">Blog</a>
+                                <a href="#"  routerLink="/blogs" class="rounded-md px-3 py-2 text-md tracking-wide font-medium text-gray-800 hover:text-primary duration-200">Blog</a>
 
-                            <a href="#"  routerLink="/contact" class="rounded-md px-3 py-2 text-md tracking-wide font-medium text-gray-800 hover:text-primary duration-200">Contact</a>
+                                <a href="#"  routerLink="/contact" class="rounded-md px-3 py-2 text-md tracking-wide font-medium text-gray-800 hover:text-primary duration-200">Contact</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="">
-                        <ul>
-                            <li></li>
-                        </ul>
+                    <div class="lg:flex hidden justify-end">
+                        <button type="button" class="py-2 px-3 bg-gradient-to-r from-primary2 to-primary text-white rounded-lg">
+                            <a href="">
+                                <i class="fa-solid fa-phone"></i>
+                                +91 876575546
+                            </a>
+                        </button>
+                    </div>
+                    <div class="flex flex-col gap-1.5 lg:hidden">
+                        <span class="w-7 h-[3px] bg-black block"></span>
+                        <span class="w-6 h-[3px] bg-black block"></span>
+                        <span class="w-7 h-[3px] bg-black block"></span>
                     </div>
                 </div>
             </div>
         </nav>
     </div>
 </Header>
-<h1 class="text-2xl font-inter">Hello world</h1>

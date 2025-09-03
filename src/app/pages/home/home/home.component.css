@@ -1,0 +1,29 @@
+.mover {
+    animation: animate 2s ease-in-out alternate infinite;
+}
+.mover2 {
+    animation: animate 1.5s ease-in-out alternate infinite;
+}
+@keyframes animate {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(20px);
+    }
+}
+
+.spin {
+    animation: animatespin 10s linear infinite ;
+}
+
+@keyframes animatespin {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
