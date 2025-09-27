@@ -1,0 +1,13 @@
+.header {
+  transition: all 0.3s ease;
+  background: transparent;
+  padding: 20px;
+}
+.header {
+  background: #ffffffaf;
+  padding: 10px;
+  backdrop-filter: blur(20px);
+}
+.header-active.scrolled {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}

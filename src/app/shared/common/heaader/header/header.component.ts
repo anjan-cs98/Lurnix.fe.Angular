@@ -1,4 +1,4 @@
-import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { Component, CUSTOM_ELEMENTS_SCHEMA, HostListener } from '@angular/core';
 import { RouterLink } from '@angular/router';
 @Component({
   selector: 'header',
@@ -11,5 +11,9 @@ import { RouterLink } from '@angular/router';
   
 })
 export class HeaderComponent {
-   
+  isScrolled = false;
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    this.isScrolled = window.scrollY > 50; // 50px scroll threshold
+  }
 }
